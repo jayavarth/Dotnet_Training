@@ -12,7 +12,7 @@ namespace Assignment1
         {
             Console.WriteLine("Enter the number:");
             int x = int.Parse(Console.ReadLine());
-            Console.WriteLine(x==0?$"{x}-zero":(x>0)?$"{x} is a positive number":$"{x} is a negative number");
+            Console.WriteLine(x==0?$"{x}-Neither ositive nor negative":(x>0)?$"{x} is a positive number":$"{x} is a negative number");
         }
     }
 }
