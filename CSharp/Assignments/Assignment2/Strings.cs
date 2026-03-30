@@ -13,14 +13,14 @@ namespace Assignment2
         {
             Console.WriteLine("Enter a word :");
             string w=Console.ReadLine();
-            Console.WriteLine("Length of the word:",w.Length);
+            Console.WriteLine($"Length of the word:{w.Length}");
 
             string reverse = "";
             for(int i = w.Length - 1; i >= 0; i--)
             {
                 reverse+= w[i];
             }
-            Console.WriteLine("Reversed word:",reverse);
+            Console.WriteLine($"Reversed word:{reverse}");
 
             Console.WriteLine("First word : ");
             string w1 = Console.ReadLine();
@@ -32,7 +32,7 @@ namespace Assignment2
             }
             else
             {
-                Console.WriteLine('Both are different');
+                Console.WriteLine("Both are different");
             }
         }
     }
