@@ -8,29 +8,40 @@ namespace Assignment3
 {
     internal class Ques3_Sales
     {
-        int salesNo, productNo, qty;
-        double price, totalAmount;
-        string dateOfSale;
-
-        public Ques3_Sales(int salesNo, int productNo, double price, int qty, string date)
+        internal class Sales
         {
-            this.salesNo = salesNo;
-            this.productNo = productNo;
-            this.price = price;
-            this.qty = qty;
-            this.dateOfSale = date;
+            protected int salesNo, productNo, qty;
+            protected double price, totalAmount;
+            protected string dateOfSale;
+
+            public Sales(int salesNo, int productNo, double price, int qty, string date)
+            {
+                this.salesNo = salesNo;
+                this.productNo = productNo;
+                this.price = price;
+                this.qty = qty;
+                this.dateOfSale = date;
+            }
+
+            public void ShowData()
+            {
+                Console.WriteLine($"SalesNo: {salesNo}, ProductNo: {productNo}, Price: {price}, Qty: {qty}, Date: {dateOfSale}, Total: {totalAmount}");
+            }
+
         }
 
-        public void Sales()
+        internal class SalesTransaction : Sales
         {
-            totalAmount = qty * price;
-        }
+            public SalesTransaction(int salesNo, int productNo, double price, int qty, string date)
+                : base(salesNo, productNo, price, qty, date)
+            {
+            }
 
-        public void ShowData()
-        {
-            Console.WriteLine($"SalesNo: {salesNo}, ProductNo: {productNo}, Price: {price}, Qty: {qty}, Date: {dateOfSale}, Total: {totalAmount}");
+            public void Sales()
+            {
+                totalAmount = qty * price;
+            }
         }
-
         public static void Salesdetail()
         {
             Console.WriteLine("Enter Sales No:");
@@ -48,10 +59,11 @@ namespace Assignment3
             Console.WriteLine("Enter Date:");
             string date = Console.ReadLine();
 
-            Ques3_Sales s = new Ques3_Sales(sNo, pNo, price, qty, date);
+            SalesTransaction s = new SalesTransaction(sNo, pNo, price, qty, date);
 
             s.Sales();
             s.ShowData();
         }
     }
-}
+
+    }

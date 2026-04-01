@@ -8,49 +8,61 @@ namespace Assignment3
 {
     internal class Ques1_Account
     {
-        int accNo;
-        string custName, accType;
-        char transType;
-        double amount, balance;
-
-        public Ques1_Account(int accNo, string custName, string accType, double balance)
+        internal class Account
         {
-            this.accNo = accNo;
-            this.custName = custName;
-            this.accType = accType;
-            this.balance = balance;
+            protected int accNo;
+            protected string custName, accType;
+            protected double balance;
+
+            public Account(int accNo, string custName, string accType, double balance)
+            {
+                this.accNo = accNo;
+                this.custName = custName;
+                this.accType = accType;
+                this.balance = balance;
+            }
+
+            public void ShowData()
+            {
+                Console.WriteLine($"AccNo: {accNo}, Name: {custName}, Type: {accType}, Balance: {balance}");
+            }
         }
 
-        public void Transaction(char type, double amt)
+        internal class Transaction : Account
         {
-            transType = type;
-            amount = amt;
+            char transType;
+            double amount;
 
-            if (transType == 'D')
-                Credit(amount);
-            else if (transType == 'W')
-                Debit(amount);
+            public Transaction(int accNo, string custName, string accType, double balance)
+                : base(accNo, custName, accType, balance)
+            {
+            }
+
+            public void Transactions(char type, double amt)
+            {
+                transType = type;
+                amount = amt;
+
+                if (transType == 'D')
+                    Credit(amount);
+                else if (transType == 'W')
+                    Debit(amount);
+            }
+
+            public void Credit(double amt)
+            {
+                balance += amt;
+            }
+
+            public void Debit(double amt)
+            {
+                if (amt <= balance)
+                    balance -= amt;
+                else
+                    Console.WriteLine("Insufficient balance");
+            }
         }
-
-        public void Credit(double amt)
-        {
-            balance += amt;
-        }
-
-        public void Debit(double amt)
-        {
-            if (amt <= balance)
-                balance -= amt;
-            else
-                Console.WriteLine("Insufficient balance");
-        }
-
-        public void ShowData()
-        {
-            Console.WriteLine($"AccNo: {accNo}, Name: {custName}, Type: {accType}, Balance: {balance}");
-        }
-
-        public static void Account()
+        public static void Accounts()
         {
             Console.WriteLine("Enter Account No:");
             int accNo = int.Parse(Console.ReadLine());
@@ -60,12 +72,13 @@ namespace Assignment3
             string type = Console.ReadLine();
             Console.WriteLine("Enter Balance:");
             double balance = double.Parse(Console.ReadLine());
-            Ques1_Account account = new Ques1_Account(accNo, name, type, balance);
+            Transaction account = new Transaction(accNo, name, type, balance);
             Console.WriteLine("Enter Transaction Type (D/W):");
             char t = Convert.ToChar(Console.ReadLine());
             Console.WriteLine("Enter Amount:");
             double amt = double.Parse(Console.ReadLine());
-            account.Transaction(t, amt);
+
+            account.Transactions(t, amt);
             account.ShowData();
         }
     }
