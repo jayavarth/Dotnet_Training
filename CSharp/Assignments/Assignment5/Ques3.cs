@@ -48,7 +48,6 @@ namespace Assignment5
             shelf[2] = new Book("Sunshine", "hij");
             shelf[3] = new Book("World wars", "klm");
             shelf[4] = new Book("7 wonders", "nop");
-
             shelf.DisplayAll();
         }
     }
