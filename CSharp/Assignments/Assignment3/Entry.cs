@@ -11,10 +11,10 @@ namespace Assignment3
         static void Main(string[] args)
         {
             Console.WriteLine("1.Bank Account");
-            Ques1_Account.Account();
+            Ques1_Account.Accounts();
             Console.WriteLine("----------------");
             Console.WriteLine("2.Student Marks");
-            Ques2_Student.Student();
+            Ques2_Student.Student_detail();
             Console.WriteLine("----------------");
             Console.WriteLine("3.Sales details");
             Ques3_Sales.Salesdetail();
