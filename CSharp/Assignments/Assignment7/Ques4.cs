@@ -1,5 +1,5 @@
 ﻿using System;
-using Travel;
+using Assignment7_Travel;
 
 namespace Assignment7
 {
@@ -14,17 +14,13 @@ namespace Assignment7
             int age;
             Console.Write("Enter Name:");
             name = Console.ReadLine();
-
             Console.Write("Enter Age:");
-            age = Convert.ToInt32(Console.ReadLine());
+            age = int.Parse(Console.ReadLine());
 
             TravelConcession obj = new TravelConcession();
-
             string result = obj.CalculateConcession(age, TotalFare);
-
             Console.WriteLine("Passenger Name:" + name);
             Console.WriteLine(result);
-
             Console.ReadLine();
         }
     }
