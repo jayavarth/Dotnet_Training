@@ -1,0 +1,17 @@
+C:\Users\jayavardhinim\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\Training\CSharp\Assessments\CSharp_AssessmentNunit\obj\Debug\CSharp_AssessmentNunit.csproj.AssemblyReference.cache
+C:\Users\jayavardhinim\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\Training\CSharp\Assessments\CSharp_AssessmentNunit\obj\Debug\CSharp_AssessmentNunit.csproj.CoreCompileInputs.cache
+C:\Users\jayavardhinim\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\Training\CSharp\Assessments\CSharp_AssessmentNunit\bin\Debug\CSharp_AssessmentNunit.exe.config
+C:\Users\jayavardhinim\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\Training\CSharp\Assessments\CSharp_AssessmentNunit\bin\Debug\CSharp_AssessmentNunit.exe
+C:\Users\jayavardhinim\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\Training\CSharp\Assessments\CSharp_AssessmentNunit\bin\Debug\CSharp_AssessmentNunit.pdb
+C:\Users\jayavardhinim\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\Training\CSharp\Assessments\CSharp_AssessmentNunit\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\jayavardhinim\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\Training\CSharp\Assessments\CSharp_AssessmentNunit\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\jayavardhinim\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\Training\CSharp\Assessments\CSharp_AssessmentNunit\bin\Debug\Unity.Abstractions.dll
+C:\Users\jayavardhinim\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\Training\CSharp\Assessments\CSharp_AssessmentNunit\bin\Debug\Unity.Container.dll
+C:\Users\jayavardhinim\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\Training\CSharp\Assessments\CSharp_AssessmentNunit\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\jayavardhinim\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\Training\CSharp\Assessments\CSharp_AssessmentNunit\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\jayavardhinim\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\Training\CSharp\Assessments\CSharp_AssessmentNunit\bin\Debug\Unity.Abstractions.pdb
+C:\Users\jayavardhinim\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\Training\CSharp\Assessments\CSharp_AssessmentNunit\bin\Debug\Unity.Container.pdb
+C:\Users\jayavardhinim\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\Training\CSharp\Assessments\CSharp_AssessmentNunit\obj\Debug\CSharp_A.741D84DA.Up2Date
+C:\Users\jayavardhinim\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\Training\CSharp\Assessments\CSharp_AssessmentNunit\obj\Debug\CSharp_AssessmentNunit.exe
+C:\Users\jayavardhinim\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\Training\CSharp\Assessments\CSharp_AssessmentNunit\obj\Debug\CSharp_AssessmentNunit.pdb
+C:\Users\jayavardhinim\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\Training\CSharp\Assessments\CSharp_AssessmentNunit\obj\Debug\CSharp_AssessmentNunit.exe.config
