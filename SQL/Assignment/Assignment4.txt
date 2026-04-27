@@ -1,0 +1,70 @@
+use Assignment4
+ 
+create or alter function fn_factorial(@num int)
+returns int
+as
+begin
+    declare @i int = 1, @fact int = 1;
+    while @i <= @num
+    begin
+        set @fact = @fact * @i;
+        set @i = @i + 1;
+    end
+    return @fact;
+end;
+ 
+select dbo.fn_factorial(5) as factorial;
+ 
+ 
+create or alter procedure sp_multiplication(@num int,@limit int)
+as
+begin
+    declare @i int = 1;
+ 
+    while @i <= @limit
+    begin
+        select @num as number,
+        @i as multipler,
+        @num *@i as result;
+        set @i = @i + 1;
+    end
+end;
+ 
+exec sp_multiplication 5, 10;
+ 
+create or alter function fn_status(@score int)
+returns varchar(10)
+as
+begin
+    declare @result varchar(10);
+ 
+    if @score >= 50
+        set @result = 'pass';
+    else
+        set @result = 'fail';
+ 
+    return @result;
+end;
+ 
+ 
+create table students(sid int,sname varchar(20));
+ 
+create table mark(mid int,sid int,score int);
+ 
+insert into students values
+(1,'jack'),
+(2,'rithvik'),
+(3,'jaspreeth'),
+(4,'praveen'),
+(5,'bisa'),
+(6,'suraj');
+ 
+insert into mark values
+(1,1,23),
+(2,6,95),
+(3,4,98),
+(4,2,17),
+(5,3,53),
+(6,5,13);
+ 
+select s.sid, s.sname, m.score,dbo.fn_status(m.score) as status from students s join mark m on s.sid = m.sid;

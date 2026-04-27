@@ -77,7 +77,7 @@ where not exists (
 
 select ename, sal from emp
 where job = 'analyst'
-and sal > 1200
+and sal>1200
 and deptno = 20
 order by ename;
 
