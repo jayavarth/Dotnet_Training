@@ -68,14 +68,16 @@ as
 begin
  declare @today date
  declare @hname varchar(30)
+
  set @today = cast(getdate() as date)
+
  select @hname = holiday_name 
  from holiday 
  where holiday_date = @today
+
  if(@hname is not null)
-  begin
-   print 'due to '+@hname +' you cannot manipulate data'
-   rollback transaction
-  end
+ begin
+     raiserror ('Due to %s you cannot manipulate data', 16, 1, @hname)
+ end
 end
 update emp set salary = 15000 where empid = 1
