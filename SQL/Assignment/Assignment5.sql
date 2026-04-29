@@ -20,7 +20,6 @@ begin
  declare @ename varchar(30), @salary float
  declare @hra float, @da float, @pf float, @it float
  declare @deductions float, @gross float, @net float
-
  select @ename = empname, @salary = salary
  from emp
  where empid = @empid
@@ -29,25 +28,22 @@ begin
  set @da = @salary * 0.20
  set @pf = @salary * 0.08
  set @it = @salary * 0.05
-
  set @deductions = @pf + @it
  set @gross = @salary + @hra + @da
  set @net = @gross - @deductions
 
  print 'payslip'
- print 'employee id : ' + cast(@empid as varchar)
- print 'employee name : ' + @ename
- print 'basic salary : ' + cast(@salary as varchar)
- print 'hra (10%) : ' + cast(@hra as varchar)
- print 'da (20%) : ' + cast(@da as varchar)
- print 'gross salary : ' + cast(@gross as varchar)
- print 'pf (8%) : ' + cast(@pf as varchar)
- print 'it (5%) : ' + cast(@it as varchar)
- print 'deductions : ' + cast(@deductions as varchar)
- print 'net salary : ' + cast(@net as varchar)
-
+ print 'employee id:' + cast(@empid as varchar)
+ print 'employee name:' + @ename
+ print 'basic salary :' + cast(@salary as varchar)
+ print 'hra (10%):' + cast(@hra as varchar)
+ print 'da (20%):' + cast(@da as varchar)
+ print 'gross salary:' + cast(@gross as varchar)
+ print 'pf (8%):' + cast(@pf as varchar)
+ print 'it (5%):' + cast(@it as varchar)
+ print 'deductions:' + cast(@deductions as varchar)
+ print 'net salary:' + cast(@net as varchar)
 end
-
 exec sp_payslip 1
 
 create table holiday
@@ -68,13 +64,10 @@ as
 begin
  declare @today date
  declare @hname varchar(30)
-
  set @today = cast(getdate() as date)
-
  select @hname = holiday_name 
  from holiday 
  where holiday_date = @today
-
  if(@hname is not null)
  begin
      raiserror ('Due to %s you cannot manipulate data', 16, 1, @hname)
