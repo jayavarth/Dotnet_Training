@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        let a = 5, b = 6, c = 7;
+        let s = (a + b + c)/2;
+        let area = Math.sqrt(s*(s-a)*(s-b)*(s-c));
+        console.log("Area of Triangle:", area);
+
+        for (let i = 1; i <= 5; i++) {
+            let pattern = "";
+            for (let j = 1; j <= i; j++) {
+                pattern += "* ";
+            }
+            console.log(pattern);
+        }
+
+        let year = 2024;
+        if ((year % 4 == 0 && year % 100 != 0)||(year % 400 == 0)) {
+            console.log(year + " is a Leap Year");
+        } else {
+            console.log(year + " is not a Leap Year");
+        }
+
+        let today=new Date();
+        let independenceDay = new Date(today.getFullYear(),7,15);
+        if (today > independenceDay) {
+            independenceDay = new Date(today.getFullYear()+1,7,15);
+        }
+        let diff = independenceDay-today;
+        let daysLeft = Math.ceil(diff/(1000*60*60*24));
+
+        console.log("Days left until Independence Day:", daysLeft);
+    </script>
+</body>
+</html>
