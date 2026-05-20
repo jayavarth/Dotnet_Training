@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h3>Odd or Even(0 to 15)</h3>
+
+    <p id="out"></p>
+
+    <script>
+        var result = "";
+
+        for (var i = 0; i <= 15; i++) {
+            if (i % 2 == 0) {
+                result += i + " is even<br>";
+            } else {
+                result += i + " is odd<br>";
+            }
+        }
+
+        document.getElementById("out").innerHTML = result;
+    </script>
+</body>
+</html>

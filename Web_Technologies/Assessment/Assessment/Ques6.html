@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+
+    <ul>
+        <li>CSHARP</li>
+        <li>SQL</li>
+        <li>ADO</li>
+    </ul>
+
+    <button id="btn">Show First Item</button>
+
+    <p id="result"></p>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                var firstItem = $("li").first().text();
+                $("#result").text(firstItem);
+            });
+        });
+    </script>
+
+</body>
+</html>
