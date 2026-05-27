@@ -11,7 +11,7 @@ namespace Assignment1
 {
 
 
-    public partial class Validator
+    public partial class Ques1
     {
 
         /// <summary>

@@ -1,0 +1,283 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Assessments\\Foodorder_CC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{27267B54-B7B3-42FB-9D0B-0E935DCB085A}|Foodorder_CC\\Foodorder_CC.csproj|c:\\assessments\\foodorder_cc\\foodorder_cc\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{27267B54-B7B3-42FB-9D0B-0E935DCB085A}|Foodorder_CC\\Foodorder_CC.csproj|solutionrelative:foodorder_cc\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27267B54-B7B3-42FB-9D0B-0E935DCB085A}|Foodorder_CC\\Foodorder_CC.csproj|c:\\assessments\\foodorder_cc\\foodorder_cc\\orderstats.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{27267B54-B7B3-42FB-9D0B-0E935DCB085A}|Foodorder_CC\\Foodorder_CC.csproj|solutionrelative:foodorder_cc\\orderstats.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27267B54-B7B3-42FB-9D0B-0E935DCB085A}|Foodorder_CC\\Foodorder_CC.csproj|c:\\assessments\\foodorder_cc\\foodorder_cc\\orderstats.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27267B54-B7B3-42FB-9D0B-0E935DCB085A}|Foodorder_CC\\Foodorder_CC.csproj|solutionrelative:foodorder_cc\\orderstats.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27267B54-B7B3-42FB-9D0B-0E935DCB085A}|Foodorder_CC\\Foodorder_CC.csproj|c:\\assessments\\foodorder_cc\\foodorder_cc\\menulist.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27267B54-B7B3-42FB-9D0B-0E935DCB085A}|Foodorder_CC\\Foodorder_CC.csproj|solutionrelative:foodorder_cc\\menulist.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27267B54-B7B3-42FB-9D0B-0E935DCB085A}|Foodorder_CC\\Foodorder_CC.csproj|c:\\assessments\\foodorder_cc\\foodorder_cc\\menulist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{27267B54-B7B3-42FB-9D0B-0E935DCB085A}|Foodorder_CC\\Foodorder_CC.csproj|solutionrelative:foodorder_cc\\menulist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27267B54-B7B3-42FB-9D0B-0E935DCB085A}|Foodorder_CC\\Foodorder_CC.csproj|c:\\assessments\\foodorder_cc\\foodorder_cc\\menudetails.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27267B54-B7B3-42FB-9D0B-0E935DCB085A}|Foodorder_CC\\Foodorder_CC.csproj|solutionrelative:foodorder_cc\\menudetails.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27267B54-B7B3-42FB-9D0B-0E935DCB085A}|Foodorder_CC\\Foodorder_CC.csproj|c:\\assessments\\foodorder_cc\\foodorder_cc\\menudetails.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{27267B54-B7B3-42FB-9D0B-0E935DCB085A}|Foodorder_CC\\Foodorder_CC.csproj|solutionrelative:foodorder_cc\\menudetails.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27267B54-B7B3-42FB-9D0B-0E935DCB085A}|Foodorder_CC\\Foodorder_CC.csproj|c:\\assessments\\foodorder_cc\\foodorder_cc\\logout.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27267B54-B7B3-42FB-9D0B-0E935DCB085A}|Foodorder_CC\\Foodorder_CC.csproj|solutionrelative:foodorder_cc\\logout.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27267B54-B7B3-42FB-9D0B-0E935DCB085A}|Foodorder_CC\\Foodorder_CC.csproj|c:\\assessments\\foodorder_cc\\foodorder_cc\\logout.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{27267B54-B7B3-42FB-9D0B-0E935DCB085A}|Foodorder_CC\\Foodorder_CC.csproj|solutionrelative:foodorder_cc\\logout.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27267B54-B7B3-42FB-9D0B-0E935DCB085A}|Foodorder_CC\\Foodorder_CC.csproj|c:\\assessments\\foodorder_cc\\foodorder_cc\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{27267B54-B7B3-42FB-9D0B-0E935DCB085A}|Foodorder_CC\\Foodorder_CC.csproj|solutionrelative:foodorder_cc\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27267B54-B7B3-42FB-9D0B-0E935DCB085A}|Foodorder_CC\\Foodorder_CC.csproj|c:\\assessments\\foodorder_cc\\foodorder_cc\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27267B54-B7B3-42FB-9D0B-0E935DCB085A}|Foodorder_CC\\Foodorder_CC.csproj|solutionrelative:foodorder_cc\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27267B54-B7B3-42FB-9D0B-0E935DCB085A}|Foodorder_CC\\Foodorder_CC.csproj|c:\\assessments\\foodorder_cc\\foodorder_cc\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27267B54-B7B3-42FB-9D0B-0E935DCB085A}|Foodorder_CC\\Foodorder_CC.csproj|solutionrelative:foodorder_cc\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27267B54-B7B3-42FB-9D0B-0E935DCB085A}|Foodorder_CC\\Foodorder_CC.csproj|c:\\assessments\\foodorder_cc\\foodorder_cc\\addeditmenu.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{27267B54-B7B3-42FB-9D0B-0E935DCB085A}|Foodorder_CC\\Foodorder_CC.csproj|solutionrelative:foodorder_cc\\addeditmenu.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27267B54-B7B3-42FB-9D0B-0E935DCB085A}|Foodorder_CC\\Foodorder_CC.csproj|c:\\assessments\\foodorder_cc\\foodorder_cc\\addeditmenu.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27267B54-B7B3-42FB-9D0B-0E935DCB085A}|Foodorder_CC\\Foodorder_CC.csproj|solutionrelative:foodorder_cc\\addeditmenu.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27267B54-B7B3-42FB-9D0B-0E935DCB085A}|Foodorder_CC\\Foodorder_CC.csproj|c:\\assessments\\foodorder_cc\\foodorder_cc\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{27267B54-B7B3-42FB-9D0B-0E935DCB085A}|Foodorder_CC\\Foodorder_CC.csproj|solutionrelative:foodorder_cc\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MenuList.aspx.cs",
+              "DocumentMoniker": "C:\\Assessments\\Foodorder_CC\\Foodorder_CC\\MenuList.aspx.cs",
+              "RelativeDocumentMoniker": "Foodorder_CC\\MenuList.aspx.cs",
+              "ToolTip": "C:\\Assessments\\Foodorder_CC\\Foodorder_CC\\MenuList.aspx.cs",
+              "RelativeToolTip": "Foodorder_CC\\MenuList.aspx.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwBIAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T05:13:44.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderStats.aspx.cs",
+              "DocumentMoniker": "C:\\Assessments\\Foodorder_CC\\Foodorder_CC\\OrderStats.aspx.cs",
+              "RelativeDocumentMoniker": "Foodorder_CC\\OrderStats.aspx.cs",
+              "ToolTip": "C:\\Assessments\\Foodorder_CC\\Foodorder_CC\\OrderStats.aspx.cs",
+              "RelativeToolTip": "Foodorder_CC\\OrderStats.aspx.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T06:03:58.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderStats.aspx",
+              "DocumentMoniker": "C:\\Assessments\\Foodorder_CC\\Foodorder_CC\\OrderStats.aspx",
+              "RelativeDocumentMoniker": "Foodorder_CC\\OrderStats.aspx",
+              "ToolTip": "C:\\Assessments\\Foodorder_CC\\Foodorder_CC\\OrderStats.aspx",
+              "RelativeToolTip": "Foodorder_CC\\OrderStats.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-05-27T06:03:09.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Site.Master",
+              "DocumentMoniker": "C:\\Assessments\\Foodorder_CC\\Foodorder_CC\\Site.Master",
+              "RelativeDocumentMoniker": "Foodorder_CC\\Site.Master",
+              "ToolTip": "C:\\Assessments\\Foodorder_CC\\Foodorder_CC\\Site.Master",
+              "RelativeToolTip": "Foodorder_CC\\Site.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-05-27T05:01:29.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MenuList.aspx",
+              "DocumentMoniker": "C:\\Assessments\\Foodorder_CC\\Foodorder_CC\\MenuList.aspx",
+              "RelativeDocumentMoniker": "Foodorder_CC\\MenuList.aspx",
+              "ToolTip": "C:\\Assessments\\Foodorder_CC\\Foodorder_CC\\MenuList.aspx",
+              "RelativeToolTip": "Foodorder_CC\\MenuList.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-05-27T05:08:53.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MenuDetails.aspx.cs",
+              "DocumentMoniker": "C:\\Assessments\\Foodorder_CC\\Foodorder_CC\\MenuDetails.aspx.cs",
+              "RelativeDocumentMoniker": "Foodorder_CC\\MenuDetails.aspx.cs",
+              "ToolTip": "C:\\Assessments\\Foodorder_CC\\Foodorder_CC\\MenuDetails.aspx.cs",
+              "RelativeToolTip": "Foodorder_CC\\MenuDetails.aspx.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAA5wA4AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T05:34:27.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MenuDetails.aspx",
+              "DocumentMoniker": "C:\\Assessments\\Foodorder_CC\\Foodorder_CC\\MenuDetails.aspx",
+              "RelativeDocumentMoniker": "Foodorder_CC\\MenuDetails.aspx",
+              "ToolTip": "C:\\Assessments\\Foodorder_CC\\Foodorder_CC\\MenuDetails.aspx",
+              "RelativeToolTip": "Foodorder_CC\\MenuDetails.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-05-27T05:32:20.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Logout.aspx.cs",
+              "DocumentMoniker": "C:\\Assessments\\Foodorder_CC\\Foodorder_CC\\Logout.aspx.cs",
+              "RelativeDocumentMoniker": "Foodorder_CC\\Logout.aspx.cs",
+              "ToolTip": "C:\\Assessments\\Foodorder_CC\\Foodorder_CC\\Logout.aspx.cs",
+              "RelativeToolTip": "Foodorder_CC\\Logout.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T06:07:56.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Logout.aspx",
+              "DocumentMoniker": "C:\\Assessments\\Foodorder_CC\\Foodorder_CC\\Logout.aspx",
+              "RelativeDocumentMoniker": "Foodorder_CC\\Logout.aspx",
+              "ToolTip": "C:\\Assessments\\Foodorder_CC\\Foodorder_CC\\Logout.aspx",
+              "RelativeToolTip": "Foodorder_CC\\Logout.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-05-27T06:07:15.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Login.aspx",
+              "DocumentMoniker": "C:\\Assessments\\Foodorder_CC\\Foodorder_CC\\Login.aspx",
+              "RelativeDocumentMoniker": "Foodorder_CC\\Login.aspx",
+              "ToolTip": "C:\\Assessments\\Foodorder_CC\\Foodorder_CC\\Login.aspx",
+              "RelativeToolTip": "Foodorder_CC\\Login.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-05-27T04:54:09.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Login.aspx.cs",
+              "DocumentMoniker": "C:\\Assessments\\Foodorder_CC\\Foodorder_CC\\Login.aspx.cs",
+              "RelativeDocumentMoniker": "Foodorder_CC\\Login.aspx.cs",
+              "ToolTip": "C:\\Assessments\\Foodorder_CC\\Foodorder_CC\\Login.aspx.cs",
+              "RelativeToolTip": "Foodorder_CC\\Login.aspx.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T04:57:42.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "C:\\Assessments\\Foodorder_CC\\Foodorder_CC\\Global.asax.cs",
+              "RelativeDocumentMoniker": "Foodorder_CC\\Global.asax.cs",
+              "ToolTip": "C:\\Assessments\\Foodorder_CC\\Foodorder_CC\\Global.asax.cs",
+              "RelativeToolTip": "Foodorder_CC\\Global.asax.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAzwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T05:53:59.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AddEditMenu.aspx",
+              "DocumentMoniker": "C:\\Assessments\\Foodorder_CC\\Foodorder_CC\\AddEditMenu.aspx",
+              "RelativeDocumentMoniker": "Foodorder_CC\\AddEditMenu.aspx",
+              "ToolTip": "C:\\Assessments\\Foodorder_CC\\Foodorder_CC\\AddEditMenu.aspx",
+              "RelativeToolTip": "Foodorder_CC\\AddEditMenu.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-05-27T05:22:42.26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AddEditMenu.aspx.cs",
+              "DocumentMoniker": "C:\\Assessments\\Foodorder_CC\\Foodorder_CC\\AddEditMenu.aspx.cs",
+              "RelativeDocumentMoniker": "Foodorder_CC\\AddEditMenu.aspx.cs",
+              "ToolTip": "C:\\Assessments\\Foodorder_CC\\Foodorder_CC\\AddEditMenu.aspx.cs",
+              "RelativeToolTip": "Foodorder_CC\\AddEditMenu.aspx.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAYwC0AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T05:24:41.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Assessments\\Foodorder_CC\\Foodorder_CC\\Web.config",
+              "RelativeDocumentMoniker": "Foodorder_CC\\Web.config",
+              "ToolTip": "C:\\Assessments\\Foodorder_CC\\Foodorder_CC\\Web.config",
+              "RelativeToolTip": "Foodorder_CC\\Web.config",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAC4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-05-27T04:52:37.021Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Validator.aspx.cs" Inherits="Assignment1.Validator" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Ques1.aspx.cs" Inherits="Assignment1.Ques1" %>
 
 <!DOCTYPE html>
 
