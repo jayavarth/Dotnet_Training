@@ -1,0 +1,52 @@
+﻿@model Assignment1.Models.Contact
+
+<h2>Create Contact</h2>
+
+@using (Html.BeginForm())
+{
+    <div class="form-group">
+
+        <label>Id</label>
+
+        @Html.TextBoxFor(m => m.Id,
+            new { @class = "form-control" })
+
+        @Html.ValidationMessageFor(m => m.Id)
+    </div>
+
+    <div class="form-group">
+
+        <label>First Name</label>
+
+        @Html.TextBoxFor(m => m.FirstName,
+            new { @class = "form-control" })
+
+        @Html.ValidationMessageFor(m => m.FirstName)
+    </div>
+
+    <div class="form-group">
+
+        <label>Last Name</label>
+
+        @Html.TextBoxFor(m => m.LastName,
+            new { @class = "form-control" })
+
+        @Html.ValidationMessageFor(m => m.LastName)
+    </div>
+
+    <div class="form-group">
+
+        <label>Email</label>
+
+        @Html.TextBoxFor(m => m.Email,
+            new { @class = "form-control" })
+
+        @Html.ValidationMessageFor(m => m.Email)
+    </div>
+
+    <br />
+
+    <input type="submit"
+           value="Save"
+           class="btn btn-primary" />
+}
