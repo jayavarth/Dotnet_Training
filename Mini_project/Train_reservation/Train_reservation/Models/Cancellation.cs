@@ -12,7 +12,6 @@ namespace Train_reservation.Models
         public int BookingId { get; set; }
         public int NoTickets { get; set; }
         public decimal RefundAmount { get; set; }
-
         public int UserId { get; set; }
     }
 }

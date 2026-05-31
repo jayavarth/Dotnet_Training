@@ -380,10 +380,6 @@ ALTER TABLE Booking
 ADD UserId INT
 FOREIGN KEY REFERENCES Users(UserId);
 
-UPDATE Booking
-SET UserId = 2
-WHERE UserId IS NULL;
-
 ALTER TABLE Booking
 ALTER COLUMN UserId INT NOT NULL;
 
@@ -498,10 +494,6 @@ select * from booking
 
 ALTER TABLE Cancellation
 ADD UserId INT;
-
-UPDATE Cancellation
-SET UserId = 2
-WHERE UserId IS NULL;
 
 ALTER TABLE Cancellation
 ALTER COLUMN UserId INT NOT NULL;
