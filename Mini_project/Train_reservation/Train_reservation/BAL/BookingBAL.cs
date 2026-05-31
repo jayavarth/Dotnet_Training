@@ -33,6 +33,5 @@ namespace Train_reservation.BAL
         {
             return dal.GetLastBooking();
         }
-
     }
 }

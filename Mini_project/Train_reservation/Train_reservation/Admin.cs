@@ -111,9 +111,28 @@ namespace Train_reservation
                     Console.Write("Enter Train No to Delete: ");
                     int trainNo = int.Parse(Console.ReadLine());
 
-                    train.DeleteTrain(trainNo);
+                    var dt = booking.GetBookings();
 
-                    Console.WriteLine("Train Deleted");
+                    bool hasBookings = false;
+
+                    foreach (System.Data.DataRow row in dt.Rows)
+                    {
+                        if (Convert.ToInt32(row["TrainNo"]) == trainNo)
+                        {
+                            hasBookings = true;
+                            break;
+                        }
+                    }
+
+                    if (hasBookings)
+                    {
+                        Console.WriteLine("Cannot delete train. Bookings exist for this train.");
+                    }
+                    else
+                    {
+                        train.SoftDeleteTrain(trainNo);
+                        Console.WriteLine("Train removed successfully (soft deleted)");
+                    }
                 }
                 else if (ch == 4)
                 {
@@ -181,7 +200,7 @@ namespace Train_reservation
                                 $"Booking ID: {row["BookingId"]} | " +
                                 $"Tickets Cancelled: {row["NoTickets"]} | " +
                                 $"Refund Amount: {row["RefundAmount"]} | " +
-                                $"Cancel Date: {Convert.ToDateTime(row["CancelDate"]).ToShortDateString()}"
+                                $"Cancel Date: {Convert.ToDateTime(row["CancelDate"])}"
                             );
                         }
                     }

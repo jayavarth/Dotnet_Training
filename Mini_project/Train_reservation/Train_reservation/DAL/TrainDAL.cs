@@ -89,18 +89,33 @@ namespace Train_reservation.DAL
             }
         }
 
-        public void DeleteTrain(int trainNo)
+        public void SoftDeleteTrain(int trainNo)
         {
             using (SqlConnection con = db.GetConnection())
             {
-                SqlCommand cmd = new SqlCommand("sp_DeleteTrain", con);
-                cmd.CommandType = CommandType.StoredProcedure;
-
+                SqlCommand cmd = new SqlCommand("UPDATE Train SET IsDeleted = 1 WHERE TrainNo = @TrainNo", con);
                 cmd.Parameters.AddWithValue("@TrainNo", trainNo);
 
                 con.Open();
                 cmd.ExecuteNonQuery();
             }
+        }
+
+        public bool TrainExists(int trainNo)
+        {
+            SqlConnection con = db.GetConnection();
+
+            SqlCommand cmd = new SqlCommand(
+                "SELECT COUNT(*) FROM Train WHERE TrainNo = @TrainNo AND IsDeleted = 0",
+                con);
+
+            cmd.Parameters.AddWithValue("@TrainNo", trainNo);
+
+            con.Open();
+            int count = (int)cmd.ExecuteScalar();
+            con.Close();
+
+            return count > 0;
         }
     }
 }

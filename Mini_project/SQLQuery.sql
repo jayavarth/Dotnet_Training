@@ -294,6 +294,7 @@ BEGIN
     DECLARE @Class VARCHAR(20)
     DECLARE @BookedPassengers INT
     DECLARE @Amount DECIMAL(10,2)
+    DECLARE @Refund DECIMAL(10,2)
 
     SELECT
         @TrainNo = TrainNo,
@@ -321,12 +322,13 @@ BEGIN
         RETURN
     END
 
-    -- Cannot cancel more than booked
     IF @NoTickets > @BookedPassengers
     BEGIN
         PRINT 'Cannot cancel more tickets than booked'
         RETURN
     END
+
+    SET @Refund = ((@Amount / @BookedPassengers) * @NoTickets) * 0.95
 
     INSERT INTO Cancellation
     (
@@ -338,7 +340,7 @@ BEGIN
     (
         @BookingId,
         @NoTickets,
-        @NoTickets * 900
+        @Refund
     )
 
     IF @NoTickets = @BookedPassengers
@@ -370,5 +372,5 @@ BEGIN
         SET Seats_Sleeper = Seats_Sleeper + @NoTickets
         WHERE TrainNo = @TrainNo
 
-    PRINT 'Cancellation Successful'
+    PRINT 'Cancellation Successful (5% deduction applied)'
 END

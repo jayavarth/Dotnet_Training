@@ -37,10 +37,14 @@ namespace Train_reservation.BAL
             dal.EditTrain(t);
         }
 
-        public void DeleteTrain(int trainNo)
+        public void SoftDeleteTrain(int trainNo)
         {
-            dal.DeleteTrain(trainNo);
+            dal.SoftDeleteTrain(trainNo);
         }
 
+        public bool TrainExists(int trainNo)
+        {
+            return dal.TrainExists(trainNo);
+        }
     }
 }
