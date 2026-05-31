@@ -279,8 +279,9 @@ CREATE PROCEDURE sp_GetCancellations
 AS
 BEGIN
     SELECT *
-    FROM Cancellation
-    ORDER BY CancelDate DESC;
+FROM Cancellation
+WHERE UserId = @UserId
+ORDER BY CancelDate DESC
 END
 
 ALTER PROCEDURE sp_CancelTicket
@@ -373,4 +374,205 @@ BEGIN
         WHERE TrainNo = @TrainNo
 
     PRINT 'Cancellation Successful (5% deduction applied)'
+END
+
+ALTER TABLE Booking
+ADD UserId INT
+FOREIGN KEY REFERENCES Users(UserId);
+
+UPDATE Booking
+SET UserId = 2
+WHERE UserId IS NULL;
+
+ALTER TABLE Booking
+ALTER COLUMN UserId INT NOT NULL;
+
+ALTER PROCEDURE sp_BookTicket
+(
+    @UserId INT,
+    @BookDate DATE,
+    @TravelDate DATE,
+    @TrainNo INT,
+    @TravelClass VARCHAR(20),
+    @Passengers INT
+)
+AS
+BEGIN
+    DECLARE @Available INT
+    DECLARE @Charge DECIMAL(10,2)
+    DECLARE @Total DECIMAL(10,2)
+
+    IF @TravelClass = '2AC'
+        SELECT @Available = Seats_2AC,
+               @Charge = Charges_2AC
+        FROM Train
+        WHERE TrainNo = @TrainNo
+
+    ELSE IF @TravelClass = '3AC'
+        SELECT @Available = Seats_3AC,
+               @Charge = Charges_3AC
+        FROM Train
+        WHERE TrainNo = @TrainNo
+
+    ELSE
+        SELECT @Available = Seats_Sleeper,
+               @Charge = Charges_Sleeper
+        FROM Train
+        WHERE TrainNo = @TrainNo
+
+    IF @Available >= @Passengers
+    BEGIN
+        SET @Total = @Passengers * @Charge
+
+        INSERT INTO Booking
+        (
+            UserId,
+            BookDate,
+            TravelDate,
+            TrainNo,
+            TravelClass,
+            Passengers,
+            Amount
+        )
+        VALUES
+        (
+            @UserId,
+            @BookDate,
+            @TravelDate,
+            @TrainNo,
+            @TravelClass,
+            @Passengers,
+            @Total
+        )
+
+        IF @TravelClass = '2AC'
+            UPDATE Train
+            SET Seats_2AC = Seats_2AC - @Passengers
+            WHERE TrainNo = @TrainNo
+
+        ELSE IF @TravelClass = '3AC'
+            UPDATE Train
+            SET Seats_3AC = Seats_3AC - @Passengers
+            WHERE TrainNo = @TrainNo
+
+        ELSE
+            UPDATE Train
+            SET Seats_Sleeper = Seats_Sleeper - @Passengers
+            WHERE TrainNo = @TrainNo
+
+        PRINT 'Booking Successful'
+    END
+    ELSE
+    BEGIN
+        PRINT 'Seats Not Available'
+    END
+END
+GO
+
+ALTER PROCEDURE sp_GetBookings
+(
+    @UserId INT
+)
+AS
+BEGIN
+    SELECT *
+    FROM Booking
+    WHERE UserId = @UserId
+    ORDER BY BookingId DESC
+END
+GO
+
+ALTER PROCEDURE sp_GetLastBooking
+(
+    @UserId INT
+)
+AS
+BEGIN
+    SELECT TOP 1 *
+    FROM Booking
+    WHERE UserId = @UserId
+    ORDER BY BookingId DESC
+END
+
+select * from booking
+
+ALTER TABLE Cancellation
+ADD UserId INT;
+
+UPDATE Cancellation
+SET UserId = 2
+WHERE UserId IS NULL;
+
+ALTER TABLE Cancellation
+ALTER COLUMN UserId INT NOT NULL;
+
+ALTER PROCEDURE sp_CancelTicket
+(
+    @UserId INT,
+    @BookingId INT,
+    @NoTickets INT
+)
+AS
+BEGIN
+    DECLARE @TrainNo INT
+    DECLARE @Class VARCHAR(20)
+    DECLARE @BookedPassengers INT
+    DECLARE @Amount DECIMAL(10,2)
+    DECLARE @Refund DECIMAL(10,2)
+
+    SELECT
+        @TrainNo = TrainNo,
+        @Class = TravelClass,
+        @BookedPassengers = Passengers,
+        @Amount = Amount
+    FROM Booking
+    WHERE BookingId = @BookingId
+
+    IF @BookedPassengers IS NULL
+    BEGIN
+        PRINT 'Invalid Booking ID'
+        RETURN
+    END
+
+    SET @Refund = ((@Amount / @BookedPassengers) * @NoTickets) * 0.95
+
+    INSERT INTO Cancellation
+    (
+        UserId,
+        BookingId,
+        NoTickets,
+        RefundAmount
+    )
+    VALUES
+    (
+        @UserId,
+        @BookingId,
+        @NoTickets,
+        @Refund
+    )
+
+    UPDATE Booking
+    SET Status = 'Cancelled'
+    WHERE BookingId = @BookingId
+
+    IF @Class = '2AC'
+        UPDATE Train SET Seats_2AC = Seats_2AC + @NoTickets WHERE TrainNo = @TrainNo
+    ELSE IF @Class = '3AC'
+        UPDATE Train SET Seats_3AC = Seats_3AC + @NoTickets WHERE TrainNo = @TrainNo
+    ELSE
+        UPDATE Train SET Seats_Sleeper = Seats_Sleeper + @NoTickets WHERE TrainNo = @TrainNo
+
+    PRINT 'Cancellation Successful'
+END
+
+ALTER PROCEDURE sp_GetCancellations
+(
+    @UserId INT
+)
+AS
+BEGIN
+    SELECT *
+    FROM Cancellation
+    WHERE UserId = @UserId
+    ORDER BY CancelDate DESC;
 END

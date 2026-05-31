@@ -24,10 +24,16 @@ namespace Train_reservation.BAL
             dal.BookTicket(b);
         }
 
+        public DataTable GetBookings(int id)
+        {
+            return dal.GetBookings(id);
+        }
+
         public DataTable GetBookings()
         {
             return dal.GetBookings();
         }
+
 
         public DataTable GetLastBooking()
         {

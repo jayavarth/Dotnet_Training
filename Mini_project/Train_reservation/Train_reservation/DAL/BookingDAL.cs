@@ -54,5 +54,23 @@ namespace Train_reservation.DAL
             }
         }
 
+        public DataTable GetBookings(int userId)
+        {
+            using (SqlConnection con = db.GetConnection())
+            {
+                SqlCommand cmd = new SqlCommand("sp_GetBookings", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.AddWithValue("@UserId", userId);
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                return dt;
+            }
+        }
+
     }
 }

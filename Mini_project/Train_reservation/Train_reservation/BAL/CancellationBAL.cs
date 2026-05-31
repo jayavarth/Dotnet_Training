@@ -22,6 +22,11 @@ namespace Train_reservation.BAL
             dal.Cancel(c);
         }
 
+        public DataTable GetCancellations(int id)
+        {
+            return dal.GetCancellations(id);
+        }
+
         public DataTable GetCancellations()
         {
             return dal.GetCancellations();

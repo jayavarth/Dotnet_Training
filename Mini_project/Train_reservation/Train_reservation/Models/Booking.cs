@@ -15,5 +15,6 @@ namespace Train_reservation.Models
         public string TravelClass { get; set; }
         public int Passengers { get; set; }
         public decimal Amount { get; set; }
+        public int UserId { get; set; }
     }
 }

@@ -19,8 +19,9 @@ namespace Train_reservation.DAL
             using (SqlConnection con = db.GetConnection())
             {
                 SqlCommand cmd = new SqlCommand("sp_CancelTicket", con);
-                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                cmd.CommandType = CommandType.StoredProcedure;
 
+                cmd.Parameters.AddWithValue("@UserId", c.UserId);  
                 cmd.Parameters.AddWithValue("@BookingId", c.BookingId);
                 cmd.Parameters.AddWithValue("@NoTickets", c.NoTickets);
 
@@ -39,6 +40,23 @@ namespace Train_reservation.DAL
                 DataTable dt = new DataTable();
                 da.Fill(dt);
 
+                return dt;
+            }
+        }
+
+        public DataTable GetCancellations(int userId)
+        {
+            using (SqlConnection con = db.GetConnection())
+            {
+                SqlCommand cmd = new SqlCommand("sp_GetCancellations", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.AddWithValue("@UserId", userId);
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+
+                da.Fill(dt);
                 return dt;
             }
         }

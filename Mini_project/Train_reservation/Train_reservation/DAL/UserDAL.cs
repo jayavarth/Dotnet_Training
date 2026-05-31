@@ -18,15 +18,23 @@ namespace Train_reservation.DAL
             using (SqlConnection con = db.GetConnection())
             {
                 SqlCommand cmd = new SqlCommand(
-                    "SELECT Role FROM Users WHERE Username=@u AND Password=@p", con);
+                    "SELECT UserId, Role FROM Users WHERE Username=@u AND Password=@p", con);
 
                 cmd.Parameters.AddWithValue("@u", user);
                 cmd.Parameters.AddWithValue("@p", pass);
 
                 con.Open();
-                var role = cmd.ExecuteScalar();
 
-                return role?.ToString();
+                SqlDataReader dr = cmd.ExecuteReader();
+
+                if (dr.Read())
+                {
+                    Session.UserId = Convert.ToInt32(dr["UserId"]);
+
+                    return dr["Role"].ToString();
+                }
+
+                return null;
             }
         }
 

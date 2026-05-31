@@ -83,6 +83,7 @@ namespace Train_reservation
                 else if (ch == 3)
                 {
                     Booking b = new Booking();
+                    b.UserId = Session.UserId;
 
                     b.BookDate = DateTime.Now;
 
@@ -148,7 +149,7 @@ namespace Train_reservation
                 }
                 else if (ch == 4)
                 {
-                    var dt = bookingBal.GetBookings();
+                    var dt = bookingBal.GetBookings(Session.UserId);
 
                     foreach (System.Data.DataRow row in dt.Rows)
                     {
@@ -173,33 +174,35 @@ namespace Train_reservation
                     Console.Write("Tickets: ");
                     c.NoTickets = int.Parse(Console.ReadLine());
 
+                    c.UserId = Session.UserId;
+
                     cancelBal.Cancel(c);
 
-                    Console.WriteLine(" Cancelled Successfully");
+                    Console.WriteLine("Cancelled Successfully");
                 }
                 else if (ch == 6)
                 {
-                    var dt = cancelBal.GetCancellations();
+                    var dt = cancelBal.GetCancellations(Session.UserId);
 
                     if (dt.Rows.Count > 0)
                     {
-                        Console.WriteLine("\n--- CANCELLATION HISTORY ---");
+                        Console.WriteLine("\n--- MY CANCELLATIONS ---");
 
                         foreach (System.Data.DataRow row in dt.Rows)
                         {
                             Console.WriteLine(
                                 $"\nCancellation ID : {row["CId"]}" +
                                 $"\nBooking ID      : {row["BookingId"]}" +
-                                $"\nTickets Cancelled: {row["NoTickets"]}" +
-                                $"\nRefund Amount   : ${row["RefundAmount"]}" +
-                                $"\nCancelled Date  : {Convert.ToDateTime(row["CancelDate"]).ToShortDateString()}" +
-                                $"\n------------------------------------"
+                                $"\nTickets         : {row["NoTickets"]}" +
+                                $"\nRefund Amount   : {row["RefundAmount"]}" +
+                                $"\nDate            : {row["CancelDate"]}" +
+                                $"\n----------------------------"
                             );
                         }
                     }
                     else
                     {
-                        Console.WriteLine("No cancellation records found.");
+                        Console.WriteLine("No cancellations found.");
                     }
                 }
 
