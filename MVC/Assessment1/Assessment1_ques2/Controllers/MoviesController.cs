@@ -12,8 +12,8 @@ namespace Assessment1_ques2.Controllers
         public ActionResult Index()
         {
             var data = repo.GetAll();
-            return View(data ?? new List<Movie>());   
-
+            return View(data ?? new List<Movie>());
+        }
         public ActionResult Create()
         {
             return View();
