@@ -1,1 +1,0 @@
-﻿document.writeln("Welcome to the Javascript File 1" + "<br/>")
