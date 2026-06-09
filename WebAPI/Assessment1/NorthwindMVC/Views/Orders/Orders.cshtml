@@ -1,0 +1,26 @@
+﻿@model IEnumerable<NorthwindMVC.Models.OrderModel>
+
+<h2>Orders of Steven Buchanan (EmployeeID=5)</h2>
+
+<table class="table table-bordered">
+
+    <tr>
+        <th>Order ID</th>
+        <th>Customer ID</th>
+        <th>Order Date</th>
+        <th>Required Date</th>
+        <th>Shipped Date</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.OrderID</td>
+            <td>@item.CustomerID</td>
+            <td>@item.OrderDate</td>
+            <td>@item.RequiredDate</td>
+            <td>@item.ShippedDate</td>
+        </tr>
+    }
+
+</table>
